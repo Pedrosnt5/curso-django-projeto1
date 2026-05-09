@@ -1,0 +1,25 @@
+Criar e ativar uma VM (venv) no Windows: 
+
+1. python -m venv venv
+2.(Terminal do VSCODE):       .\venv\Scripts\Activate.ps1
+2.(CMD):                      .\venv\Scripts\activate
+3. Caso precise apagar e refazer o processo: rm -r venv
+4. Para DESATIVAR: deactivate
+
+
+PARA INSTALAR O DJANGO e uns adicionais no Projeto: 
+
+1.Instalar: pip install django
+2.(opcional): python -m pip install pip setuptools wheel --upgrade    
+3. Para ter certeza de que foi instalado: python-admin --version
+
+
+PARA COMEÇAR O DESENVOLVIMENTO DO PROJETO: 
+
+1. django-admin startproject nome-do-Projeto .           
+obs.: o ponto no final serve para criar o project dentro da pasta atual. Se não, ficaria: (Project1/nome-do-projeto(manage.py)/nome-do-projeto(resto dos arquivos))
+Sem o ponto, ele criará uma pasta (com o mesmo nome) separada para o manage.py, no caso, 
+na maioria das vezes queremos que o manage.py fique junto ao resto dos arquivos na raiz do projeto em uma pasta só. > (Project1/nome-do-projeto(manage.py e o resto dos arquivos))
+
+
+2. django-admin startapp nome-do-app
