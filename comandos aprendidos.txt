@@ -1,4 +1,9 @@
-Criar e ativar uma VM (venv) no Windows: 
+Criar e ativar um ambiente virtual (venv) no Windows: 
+
+PORQUE É NECESSÁRIO UTILIZAR UM AMBIEMTE VIRTUAL? 
+
+R: Para ter um ambiemte exclusivo para o projeto. Assim, é possível ter várias versões de uma mesma dependencia distribuidas entre meus vários projetos Python. Bastaria ativar o ambiente virtual para usar a dependencia referente àquele projeto
+Por exemplo: o projeto-1 poderia ter o django 1.11 e o projeto-2 poderia ter o django 2.31, e eles não se afetariam por estarem dentro de uma venv separada (tipo uma cápsula ou caixa).
 
 1. python -m venv venv
 2.(Terminal do VSCODE):       .\venv\Scripts\Activate.ps1
@@ -23,3 +28,13 @@ na maioria das vezes queremos que o manage.py fique junto ao resto dos arquivos 
 
 
 2. django-admin startapp nome-do-app
+3. python manage.py runserver
+
+4. Para configurar um RUN AND DEBUG para rodar o projeto (runserver) por clique (lauch.json).  
+- Basta clicar no botão Run And Debug na lateral esqueda do VSCODE, e clicar em "criar um arquivo de configuração",
+- Lá selecionar o Django como Debug.
+- OBS: Dentro do arquivo, tem de haver a seguinte linha:  "type": "python", e não "type": "debbugpy". 
+- NOTA: ESSE Lauch.json já ativa a venv automaticamente!!!
+
+
+

@@ -1,0 +1,19 @@
+Quando o projeto DJANGO é criado, o que vem nele? 
+Explicação dos arquivos básicos do projeto: 
+
+0. (Manage.py): É um comando, e também uma página de configuração do projeto. Faz a mesma coisa que o django-admin, porém ele precisa do settings.py para funcionar, ele configura uma váriavel de ambiente chamada 
+"DJANGO_SETTINGS_MODULE" que aponta para o nosso settings do projeto. 
+
+0.1. (django-admin): É um comando, usamos ele para criar o projeto e o app. Basicamente ele só serve pra isso, dá pra dizer que esse comando só está relacionado a funções
+fora do projeto, e quando queremos dar qualquer comando dentro ou para o projeto, usamos o comando manage.py.
+
+
+1. (__init__.py):  Serve para indicar para o Python que esta pasta (a pasta onde ela se encontra) é um pacote do python, esse arquivo serve para "inicializar" esse pacote e o que tiver dentro dele 
+será carregado/inicializado no projeto. Sem esse arquivo, a pasta ficará invisível para o python e nada dentro dela será inicializada/enchergada/carregado.
+
+2.(asgi.py) e (wsgi.py):  Ambos são usados para fazer a ligação do Django com um servidor WEB externo.
+
+3.(urls.py): Aqui é definido as portas de entrada (rotas/endereço web) para a nossa aplicação.
+
+4.(settings.py): São configurações que dizem como o Django deve se comportar.
+
