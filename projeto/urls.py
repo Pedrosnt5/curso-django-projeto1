@@ -14,18 +14,25 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path
 
+from django.contrib import admin
+from django.urls import path, include
+from recipes.views import home, contato, sobre
 
 # COMENTÁRIOS SOBRE AS ROTAS (URLS) DO PROJETO NO FINAL DO ARQUIVO!
 
 urlpatterns = [
     # esses comandos esperam uma ROTA e uma FUNÇÃO (VIEW) para serem executados
     # path('rota/', view_funcionalidade)    #http://127.0.0.1:8000/rota/
-    path('admin/', admin.site.urls),    #http://127.0.0.1:8000/admin/
-    path('home/')                       #http://127.0.0.1:8000/home/
+    path('admin/', admin.site.urls),        #http://127.0.0.1:8000/admin/
+    path('', include('recipes.urls')),      # As urls de recipes ficam em um arquivo separado chamado recipes/urls.py, e são incluídas aqui usando a função include() para organizar melhor as rotas do projeto
+    path('recipes/', include('recipes.urls')) # É a mesma coisa da url de cima porém a rota ficará  em um subdiretório (recipes) > http://dominio/recipes/home
 ]
+
+
+
+
+
 
 
 

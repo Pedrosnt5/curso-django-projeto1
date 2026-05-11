@@ -1,0 +1,6 @@
+O QUE É HHTP REQUEST e HTTP RESPONSE: 
+R: Quando o cliente/usuáio quer acessar uma url (acessar um site) ele terá que fazer um REQUEST, 
+e o servidor deverá responder com RESPONSE para permitir a visualização para o cliente.
+
+def my_view(request): 
+    return HttpResponse("UMA LINDA STRING")
