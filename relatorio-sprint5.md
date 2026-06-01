@@ -173,3 +173,31 @@ A partir desta sprint, **toda alteracao relevante** deve ser registrada neste ar
 - Manter linguagem clara para leitura por perfil tecnico e nao tecnico.
 - Evitar termos ambiguos entre "atracao" e "submissao" quando o contexto ainda estiver em avaliacao.
 - Sempre que houver mudanca de regra de negocio, registrar tambem a justificativa.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INSCRIÇÃO DE ATRAÇÃO
+- possibilidade de cancelar inscrição nas atrações 
+- acessar as inscrição de atração pela programação 
+
+SUBMISSÃO
+- Mudar o nome dos campos adicionais de modalidade para Informações Adicionais 
+- Apenas um nível de ensino 
+- Campo de selecionar usuário deve virar campo digitavel com min de 5 caracteres e selecionável com max de 3 usuários
+
+
+MODALIDADE x SUBMISSAO
+- Se certificar que a modalidade possui limite de quantidade de vagas e refletir isso na Submissão
+Já tem no backend mas não é mostrado nas modalidades 
+
